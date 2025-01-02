@@ -52,4 +52,12 @@ example();
 
  //## number data types
 
-// ## number 
+let num = 96.0;
+console.log(num);
+
+
+let x1 ="10"; //string
+let x2= 10; //number
+console.log(typeof x2);
+
+//## 

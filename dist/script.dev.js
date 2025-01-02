@@ -1,5 +1,7 @@
 "use strict";
 
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
 //document.writeln("hello"); 
 //console.log("javascript Tutorial");
 //var fristnsme="grestdtsck";
@@ -39,5 +41,12 @@ var fristnsme = "vaidik"; //double quotes
 
 var lastname = 'patel'; //single quotes
 //## number data types
-// ## number
+
+var num = 96.0;
+console.log(num);
+var x1 = "10"; //string
+
+var x2 = 10; //number
+
+console.log(_typeof(x2)); //##
 //# sourceMappingURL=script.dev.js.map
