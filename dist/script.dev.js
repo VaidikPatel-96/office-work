@@ -48,5 +48,13 @@ var x1 = "10"; //string
 
 var x2 = 10; //number
 
-console.log(_typeof(x2)); //##
+console.log(_typeof(x2)); //## Bolean data types
+
+var learning = true;
+var completed = false;
+console.log(_typeof(completed));
+console.log(completed);
+var a = 20 > 10;
+console.log(a);
+console.log(_typeof(a));
 //# sourceMappingURL=script.dev.js.map

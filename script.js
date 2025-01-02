@@ -60,4 +60,15 @@ let x1 ="10"; //string
 let x2= 10; //number
 console.log(typeof x2);
 
-//## 
+//## Bolean data types
+
+let learning= true;
+let completed =false;
+
+console.log(typeof completed);
+console.log(completed);
+
+
+let a =20>10;
+console.log(a);
+console.log(typeof a);
