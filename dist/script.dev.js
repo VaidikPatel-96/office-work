@@ -75,5 +75,9 @@ var person = {
   age: 36
 };
 console.log(person);
-console.log(_typeof(person));
+console.log(_typeof(person)); // Array data types
+
+var number = [1, 2, 3, 4, 5];
+console.log(number);
+console.log(_typeof(number));
 //# sourceMappingURL=script.dev.js.map
