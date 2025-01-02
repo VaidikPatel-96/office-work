@@ -1,1 +1,1 @@
-{"version":3,"sources":["script.js"],"names":["document","writeln"],"mappings":";;AAAAA,QAAQ,CAACC,OAAT,CAAiB,OAAjB","sourcesContent":["document.writeln(\"hello\");"],"file":"script.dev.js"}
+{"version":3,"sources":["script.js"],"names":["document","writeln"],"mappings":";;AAAAA,QAAQ,CAACC,OAAT,CAAiB,OAAjB","sourcesContent":["document.writeln(\"hello\"); "],"file":"script.dev.js"}
