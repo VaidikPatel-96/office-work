@@ -61,5 +61,10 @@ console.log(_typeof(a)); //## undefined data types
 var age;
 console.log(age); //age=23
 
-console.log(_typeof(age));
+console.log(_typeof(age)); // ##null data types
+
+var number1 = null;
+console.log(number1);
+console.log(_typeof(number1));
+console.log(null == undefined);
 //# sourceMappingURL=script.dev.js.map

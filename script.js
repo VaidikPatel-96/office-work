@@ -80,3 +80,11 @@ let age ;
 console.log(age); //age=23
 
 console.log(typeof age);
+
+// ##null data types
+
+let number1= null;
+console.log(number1);
+console.log(typeof number1);
+console.log(null == undefined);
+
