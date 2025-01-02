@@ -66,5 +66,14 @@ console.log(_typeof(age)); // ##null data types
 var number1 = null;
 console.log(number1);
 console.log(_typeof(number1));
-console.log(null == undefined);
+console.log(null == undefined); //## Referemce data types
+// object
+
+var person = {
+  fristnsme: 'vaidik',
+  lastname: 'patel',
+  age: 36
+};
+console.log(person);
+console.log(_typeof(person));
 //# sourceMappingURL=script.dev.js.map

@@ -88,3 +88,16 @@ console.log(number1);
 console.log(typeof number1);
 console.log(null == undefined);
 
+
+//## Referemce data types
+
+// object
+
+let person = {
+    fristnsme : 'vaidik',
+    lastname : 'patel',
+    age : 36
+};
+console.log(person);
+console.log(typeof person);
+
