@@ -107,4 +107,11 @@ let number=[1,2,3,4,5];
 console.log(number);
 console.log(typeof number);
 
+// function 
+
+function msg(){
+    console.log("hello ,vaidik");
+    
+}
+console.log(typeof msg);
 
