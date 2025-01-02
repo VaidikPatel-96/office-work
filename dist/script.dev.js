@@ -33,5 +33,11 @@ function example3() {
   }
 }
 
-example3();
+example3(); //## string data types
+
+var fristnsme = "vaidik"; //double quotes
+
+var lastname = 'patel'; //single quotes
+//## number data types
+// ## number
 //# sourceMappingURL=script.dev.js.map

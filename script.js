@@ -45,4 +45,11 @@ example();
  example3(); 
 
 
- 
+ //## string data types
+
+ let fristnsme="vaidik";  //double quotes
+ let lastname='patel'; //single quotes
+
+ //## number data types
+
+// ## number 
