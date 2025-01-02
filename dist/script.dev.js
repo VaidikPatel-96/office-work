@@ -56,5 +56,10 @@ console.log(_typeof(completed));
 console.log(completed);
 var a = 20 > 10;
 console.log(a);
-console.log(_typeof(a));
+console.log(_typeof(a)); //## undefined data types
+
+var age;
+console.log(age); //age=23
+
+console.log(_typeof(age));
 //# sourceMappingURL=script.dev.js.map

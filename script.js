@@ -72,3 +72,11 @@ console.log(completed);
 let a =20>10;
 console.log(a);
 console.log(typeof a);
+
+//## undefined data types
+
+let age ;
+
+console.log(age); //age=23
+
+console.log(typeof age);
