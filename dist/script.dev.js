@@ -19,12 +19,19 @@ function example() {
 
 example(); // console.log(x);
 //##Function scope
+// function example2(){
+//     var fs="hello, GreatStack Function";
+// }
+// example2
+//  console.log(fs);  //fs is not defined
+//##Block scope
 
-function example2() {
-  var fs = "hello, GreatStack Function";
+function example3() {
+  if (true) {
+    var bv = "GreatStack";
+    console.log(bv);
+  }
 }
 
-example2;
-console.log(fs); //fs is not defined
-//##Block scope
+example3();
 //# sourceMappingURL=script.dev.js.map

@@ -27,13 +27,22 @@ example();
 
 //##Function scope
 
-function example2(){
-    var fs="hello, GreatStack Function";
-}
-example2
- console.log(fs);  //fs is not defined
+// function example2(){
+//     var fs="hello, GreatStack Function";
+// }
+// example2
+//  console.log(fs);  //fs is not defined
 
 
  //##Block scope
 
-  
+ function example3(){
+    if(true){
+        let bv ="GreatStack";
+        console.log(bv);
+    }
+ }
+ example3(); 
+
+
+ 
