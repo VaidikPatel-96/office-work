@@ -198,3 +198,36 @@ console.log(c != c1);
 
 console.log(c === c1);
 console.log(c !== c1);
+
+
+// Logical Operator
+
+// AND (&&)
+
+let a2 = 5;
+let a3=10;
+
+console.log(a2 > 0 && a3 > 0);
+console.log(a2 > 0 && a3 < 0);
+console.log(a2 < 0 && a3 > 0);
+console.log(a2 < 0 && a3 < 0);
+
+// OR || 
+
+let b2 = 5;
+let b3=10;
+
+console.log(b2 < 0 || b3 > 0);
+console.log(b2 > 0 || b3 < 0);
+console.log(b2 > 0 || b3 > 0);
+console.log(b2 < 0 || b3 < 0);
+
+
+// NOT (!)
+
+let yes = true;
+let  no = false;
+
+console.log(!yes);
+console.log(!no); 
+

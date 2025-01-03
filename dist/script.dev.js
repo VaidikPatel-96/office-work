@@ -140,5 +140,25 @@ console.log(c >= c1);
 console.log(c == c1);
 console.log(c != c1);
 console.log(c === c1);
-console.log(c !== c1);
+console.log(c !== c1); // Logical Operator
+// AND (&&)
+
+var a2 = 5;
+var a3 = 10;
+console.log(a2 > 0 && a3 > 0);
+console.log(a2 > 0 && a3 < 0);
+console.log(a2 < 0 && a3 > 0);
+console.log(a2 < 0 && a3 < 0); // OR || 
+
+var b2 = 5;
+var b3 = 10;
+console.log(b2 < 0 || b3 > 0);
+console.log(b2 > 0 || b3 < 0);
+console.log(b2 > 0 || b3 > 0);
+console.log(b2 < 0 || b3 < 0); // NOT (!)
+
+var yes = true;
+var no = false;
+console.log(!yes);
+console.log(!no);
 //# sourceMappingURL=script.dev.js.map
