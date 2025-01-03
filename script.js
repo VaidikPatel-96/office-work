@@ -231,3 +231,13 @@ let  no = false;
 console.log(!yes);
 console.log(!no); 
 
+
+//## Operator Precedence
+
+let result= 2 + 3 * 4;
+
+console.log(result); // 2+3= 5 * 4 =20
+
+
+
+   

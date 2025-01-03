@@ -160,5 +160,8 @@ console.log(b2 < 0 || b3 < 0); // NOT (!)
 var yes = true;
 var no = false;
 console.log(!yes);
-console.log(!no);
+console.log(!no); //## Operator Precedence
+
+var result = 2 + 3 * 4;
+console.log(result); // 2+3= 5 * 4 =20
 //# sourceMappingURL=script.dev.js.map
