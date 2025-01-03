@@ -374,3 +374,19 @@ while (iii<=10){
     t++;
 
  }while(t<=5);
+
+ // break/ continue
+
+ for (let ia = 1; ia <=5; ia++ ){
+    if(ia ==4){
+        break;
+    }
+    console.log(ia);
+ }
+
+ for (let ia = 1; ia <=5; ia++ ){
+    if(ia ==4){
+        continue;
+    }
+    console.log(ia);
+ }
