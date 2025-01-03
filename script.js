@@ -506,3 +506,5 @@ person3.greet();
  }
  const student = new Student("peter");
  student.greet();
+
+ 
