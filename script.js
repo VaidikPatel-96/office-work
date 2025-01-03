@@ -240,4 +240,101 @@ console.log(result); // 2+3= 5 * 4 =20
 
 
 
-   
+//## Conditional Statements
+
+//if
+
+let contry = "India";
+
+let age1= 20;
+
+if (age1 >= 18 && contry == "India"){
+    console.log("You can get a driver's license. ");
+}
+
+
+//If else
+
+let age5 = 19;
+
+if (age5 > 18){
+    console.log("YOu are an adult.");
+}
+else{
+    console.log("You are a minor.");
+}
+
+// else if
+
+ let age6 = 17;
+
+ if(age6 >=18){
+    console.log("you are an adult");
+ }
+ else if (age6 >=16){
+    console.log("you are  teenager");
+ }
+ else {
+    console.log("you are a minor");
+ }
+
+ //Switch
+
+ let value = true;
+
+ switch (typeof value) {
+    case "number":
+        console.log("number")
+        break;
+    case "string":
+        console.log("string")
+        break;
+        case "boolean":
+            console.log("boolean")
+            break;            
+    default:
+        console.log("other");
+        break;
+ }
+
+
+ let  dayName =4;
+
+ switch (dayName) {
+    case 1:
+        dayName = "Sunday"; 
+        break;
+    case 2:
+         dayName = "Monday"; 
+          break;
+    case 3:
+         dayName = "tuesday"; 
+         break;
+    case 4:
+        dayName = "wednesday"; 
+        break;
+    case 5:
+         dayName = "thrusday"; 
+          break;
+    case 6:
+         dayName = "friday"; 
+         break;     case 1:
+
+     case 7:
+          dayName = "saturday"; 
+           break;
+    default:
+        dayName = "Invalid day number";
+        break;
+ }
+ console.log("The day is:" + dayName);
+
+ // Ternary operator
+
+ // condition ? value_if_true : value_if_false
+
+ let age7 = 16;
+
+ let msg1 = (age7 >=18) ? "You are an adult":"you are a minor";
+
+ console.log(msg1);
