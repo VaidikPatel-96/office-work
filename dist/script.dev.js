@@ -115,5 +115,19 @@ var A = 5; // A +=3;
 // A %=3;
 
 A = Math.pow(A, 3);
-console.log(A);
+console.log(A); //## Increment ++/ Decrement-- Operators
+//prefix and postfix:
+// let i = 10;
+// console.log(++i);
+// console.log(i);
+// let i = 10;
+// console.log(--i);
+// console.log(i);
+// let i = 10;
+// console.log(i++);
+// console.log(i);
+
+var i = 10;
+console.log(i--);
+console.log(i);
 //# sourceMappingURL=script.dev.js.map
