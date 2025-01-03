@@ -338,3 +338,39 @@ else{
  let msg1 = (age7 >=18) ? "You are an adult":"you are a minor";
 
  console.log(msg1);
+
+ //## loop
+
+ // for loop
+
+//  for (let ii =1; ii <=10; ii++){
+//     console.log(ii);
+//  }
+
+for (let ii=1; ii <=5; ii++){
+    console.log(ii);
+
+    for (let j = 1; j <=3; j++){
+        console.log("inner loop" + j);
+    }
+}
+
+//wile loop
+
+let iii = 0;
+
+while (iii<=10){
+    console.log(iii);
+    iii++;
+
+}
+
+//Do while loop
+
+ let t =2;
+
+ do{
+    console.log(t)
+    t++;
+
+ }while(t<=5);

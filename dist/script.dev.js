@@ -257,5 +257,22 @@ console.log("The day is:" + dayName); // Ternary operator
 
 var age7 = 16;
 var msg1 = age7 >= 18 ? "You are an adult" : "you are a minor";
-console.log(msg1);
+console.log(msg1); //## loop
+// for loop
+//  for (let ii =1; ii <=10; ii++){
+//     console.log(ii);
+//  }
+
+for (var ii = 1; ii <= 5; ii++) {
+  console.log(ii);
+
+  for (var j = 1; j <= 3; j++) {
+    console.log("inner loop" + j);
+  }
+} //wile loop
+
+
+var iii = 0;
+
+while (iii <= 10) {}
 //# sourceMappingURL=script.dev.js.map
