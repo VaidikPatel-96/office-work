@@ -151,3 +151,16 @@ console.log(m1);
 let e =2 ** 4; //2x2x2x2
 console.log(e);
 
+
+
+//## Assignment Operators
+
+let A =5;
+// A +=3;
+// A -=3;
+// A *=3;
+// A /=3;
+// A %=3;
+ A **=3;
+console.log(A);
+

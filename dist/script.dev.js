@@ -106,5 +106,14 @@ console.log(m1); //Exponentiation
 
 var e = Math.pow(2, 4); //2x2x2x2
 
-console.log(e);
+console.log(e); //## Assignment Operators
+
+var A = 5; // A +=3;
+// A -=3;
+// A *=3;
+// A /=3;
+// A %=3;
+
+A = Math.pow(A, 3);
+console.log(A);
 //# sourceMappingURL=script.dev.js.map
