@@ -441,3 +441,14 @@ let sum3 = function(x,y){
 
 }
 console.log(sum3(10,3));
+
+//Object in javascript
+
+const person2 ={
+    fistname:"vaidik",
+    lastname:"patel",
+    age: 35
+}
+person2.company = "tesla";
+console.log(person2);
+
