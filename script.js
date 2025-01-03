@@ -452,3 +452,14 @@ const person2 ={
 person2.company = "tesla";
 console.log(person2);
 
+//this keyword
+
+const person3 ={
+    fistname:"vaidik",
+    lastname:"patel",
+    greet:function(){
+        console.log("hello"+ this.fistname);
+    }
+
+}
+person3.greet();
