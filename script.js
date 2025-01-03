@@ -478,3 +478,31 @@ person3.greet();
  const person11=new vs("bbb","ccc");
 
  console.log(vs);
+
+
+ //javaScript Class
+
+ class Personx{
+    constructor(name,age){
+        this.name=name;
+        this.age=age;
+    }
+ }
+ const personc = new Personx("vaidik",23);
+ const personv= new Personx("fgfs",56);
+ console.log(personv);
+
+
+ class persona{
+    constructor(name){
+        this.name = name;    
+    }
+    greet(){
+        console.log("hello"+ this.name);
+    }
+ }
+ class Student extends persona{
+
+ }
+ const student = new Student("peter");
+ student.greet();
