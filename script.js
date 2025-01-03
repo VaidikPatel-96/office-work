@@ -183,3 +183,18 @@ let i = 10;
 console.log(i--);
 console.log(i);
 
+// Comarison Operators
+
+let c = 10;
+let c1= 20;
+
+console.log(c < c1);
+console.log(c > c1);
+console.log(c <= c1);
+console.log(c >= c1);
+
+console.log(c == c1);
+console.log(c != c1);
+
+console.log(c === c1);
+console.log(c !== c1);

@@ -129,5 +129,16 @@ console.log(A); //## Increment ++/ Decrement-- Operators
 
 var i = 10;
 console.log(i--);
-console.log(i);
+console.log(i); // Comarison Operators
+
+var c = 10;
+var c1 = 20;
+console.log(c < c1);
+console.log(c > c1);
+console.log(c <= c1);
+console.log(c >= c1);
+console.log(c == c1);
+console.log(c != c1);
+console.log(c === c1);
+console.log(c !== c1);
 //# sourceMappingURL=script.dev.js.map
