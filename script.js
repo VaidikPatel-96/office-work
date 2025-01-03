@@ -115,3 +115,39 @@ function msg(){
 }
 console.log(typeof msg);
 
+
+//## Opreators In JavaScript ##
+
+//Arithmetic Operators
+
+// Addition
+
+let sum =5+3;
+console.log(sum);
+
+//Subtraction
+
+let s =5-3;
+console.log(s);
+
+//multiplication
+
+let m =5 * 3;
+console.log(m);
+
+//division
+
+let d =5 / 3;
+console.log(d);
+
+//Modulus
+
+let m1 =15 % 31;
+console.log(m1);
+
+
+//Exponentiation
+
+let e =2 ** 4; //2x2x2x2
+console.log(e);
+

@@ -85,5 +85,26 @@ function msg() {
   console.log("hello ,vaidik");
 }
 
-console.log(_typeof(msg));
+console.log(_typeof(msg)); //## Opreators In JavaScript ##
+//Arithmetic Operators
+// Addition
+
+var sum = 5 + 3;
+console.log(sum); //Subtraction
+
+var s = 5 - 3;
+console.log(s); //multiplication
+
+var m = 5 * 3;
+console.log(m); //division
+
+var d = 5 / 3;
+console.log(d); //Modulus
+
+var m1 = 15 % 31;
+console.log(m1); //Exponentiation
+
+var e = Math.pow(2, 4); //2x2x2x2
+
+console.log(e);
 //# sourceMappingURL=script.dev.js.map
