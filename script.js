@@ -420,3 +420,24 @@ let result1 = fn1(3);
 console.log(result1);
 
 console.log(result1(2));
+
+//callback function
+
+function display(result){
+    console.log(result);
+
+}
+function add(num1,num2,mycallback){
+    let sum=num1 + num2;
+    mycallback(sum);
+
+}
+add(20,33,display)
+
+//anonymous functions
+
+let sum3 = function(x,y){
+    return x+y;
+
+}
+console.log(sum3(10,3));
