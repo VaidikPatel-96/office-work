@@ -463,3 +463,18 @@ const person3 ={
 
 }
 person3.greet();
+
+
+ //## object prototy
+
+ function vs (fnaem,lname){
+        this.fistname=fnaem,
+        this.lastname=lname
+       }
+
+ vs.prototype.gender ="male";
+
+ const person1= new vs("vadik","patel");
+ const person11=new vs("bbb","ccc");
+
+ console.log(vs);
