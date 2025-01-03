@@ -390,3 +390,33 @@ while (iii<=10){
     }
     console.log(ia);
  }
+
+// function
+
+function greet(){
+    console.log("hello, vaidik");
+}
+greet();
+
+//default parameters
+
+ function sum1(x,y){
+    console.log(x+y);
+
+}
+
+sum1(10,15);
+
+//function return
+
+function fn1(q){
+    function fn2(l){
+        return q * l;
+    }
+    return fn2;
+}
+let result1 = fn1(3);
+
+console.log(result1);
+
+console.log(result1(2));
