@@ -2,7 +2,10 @@ const notesConstainer = document.querySelector(".notes-container");
 const creatBtn = document.querySelector(".btn");
 let notes= document.querySelectorAll(".input-box");
 
-
+function showNotes(){
+    notesConstainer.innerHTML = localStorage.getItem("notes");
+}
+showNotes()
 function updateStorage(){
     localStorage.setItem("notes",notesConstainer.innerHTML);
 }
@@ -19,7 +22,22 @@ creatBtn.addEventListener("click", ()=>{
 notesConstainer.addEventListener("click", function(e){
     if(e.target.tagName ==="IMG"){
         e.target.parentElement.remove();
-        updateStorage()
+        updateStorage(); 
          
+    }
+    else if (e.target.tagName == "p"){
+        notes = document.querySelectorAll("input-box");
+        notes.forEach(nt => {
+            nt.onkeyup = function(){
+                updateStorage();
+            }
+        })
+    }
+})
+
+document.addEventListener("keydown",event =>{
+    if(event.key === "Enter"){
+        document.execCommand("insertLineBreak");
+        event.preventDefault();
     }
 })
