@@ -7,6 +7,20 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <!-- <h1>index.html</h1> -->
+    <ul id="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Project</li>
+    </ul>
+   <script>
+    let menu = document.getElementById("menu");
+    let list =document.createElement("li");
+    list.innerHTML = "Contact";
+
+    menu.appendChild(list);
+    
+   </script> 
+    
 </body>
 </html>
