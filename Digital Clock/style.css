@@ -1,0 +1,111 @@
+/* General body styling */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1d1f26, #3d4d63);
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+/* Clock container styling */
+.clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Clock styling */
+.clock {
+    display: flex;
+    background: linear-gradient(135deg, #ff416c, #2c68f5);
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    gap: 20px;
+}
+
+/* Time segment styling */
+.time-segment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+/* Numbers styling */
+.time-segment span:first-child {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+/* Label styling */
+.label {
+    font-size: 1rem;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+}
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1d1f26, #3d4d63);
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+/* Clock container styling */
+.clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Clock styling */
+.clock {
+    display: flex;
+    background: linear-gradient(135deg, #ff416c, #2c68f5);
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    gap: 20px;
+}
+
+/* Time segment styling */
+.time-segment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+/* Numbers styling */
+.time-segment span:first-child {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+/* Label styling */
+.label {
+    font-size: 1rem;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+}
