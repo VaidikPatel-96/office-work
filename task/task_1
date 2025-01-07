@@ -1,0 +1,135 @@
+1 .) Describe the difference between mutable and immutable types in Python. Provide examples.
+
+Mutable Types
+Mutable types are those whose values can be changed in place after they are created. This means you can modify the content without creating a new object. Common mutable types in Python include:
+
+Lists: You can change, add, or remove elements.
+Dictionaries: You can change, add, or remove key-value pairs.
+Sets: You can add or remove elements.
+Example:
+# List (mutable)
+my_list = [1, 2, 3]
+my_list.append(4)  # Modifies the list in place
+print(my_list)  # Output: [1, 2, 3, 4]
+
+# Dictionary (mutable)
+my_dict = {'a': 1, 'b': 2}
+my_dict['c'] = 3  # Modifies the dictionary in place
+print(my_dict)  # Output: {'a': 1, 'b': 2, 'c': 3}
+
+# Set (mutable)
+my_set = {1, 2, 3}
+my_set.add(4)  # Modifies the set in place
+print(my_set)  # Output: {1, 2, 3, 4}
+
+Immutable Types
+Immutable types are those whose values cannot be changed after they are created. Any modification to an immutable object results in a new object being created. Common immutable types in Python include:
+
+Strings: Any operation that modifies a string creates a new string.
+Tuples: Once created, the elements of a tuple cannot be changed.
+Integers: Any arithmetic operation results in a new integer object.
+Floats: Similar to integers, any arithmetic operation results in a new float object.
+Example:
+
+# String (immutable)
+my_string = "hello"
+new_string = my_string + " world"  # Creates a new string
+print(my_string)  # Output: "hello"
+print(new_string)  # Output: "hello world"
+
+# Tuple (immutable)
+my_tuple = (1, 2, 3)
+new_tuple = my_tuple + (4,)  # Creates a new tuple
+print(my_tuple)  # Output: (1, 2, 3)
+print(new_tuple)  # Output: (1, 2, 3, 4)
+
+# Integer (immutable)
+my_int = 10
+new_int = my_int + 5  # Creates a new integer
+print(my_int)  # Output: 10
+print(new_int)  # Output: 15
+
+
+2.) Write a Python program to check if a number is a palindrome.
+
+def is_palindrome(number):
+    num_str = str(number)
+    return num_str == num_str[::-1]
+
+number = int(input("Enter a number: "))
+
+if is_palindrome(number):
+    print(f"{number} is a palindrome.")
+else:
+    print(f"{number} is not a palindrome.")
+
+
+3. What are Python decorators? Provide an example of how to use one.
+Answer: A decorator is a function that takes another function as input and extends or modifies its behavior without changing the original function.
+
+
+Example:
+
+
+def my_decorator(func):
+    def wrapper():
+        print("Something is happening before the function is called.")
+        func()
+        print("Something is happening after the function is called.")
+    return wrapper
+
+@my_decorator
+def say_hello():
+    print("Hello!")
+
+say_hello()
+
+In this example, `my_decorator` is a decorator that wraps the `say_hello` function. When `say_hello` is called, the wrapper function is executed, which adds behavior before and after the original function call.
+
+
+
+4. Explain the purpose of __init__ in Python classes.
+
+
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+person1 = Person("Alice", 30)
+
+print(person1.name)  
+print(person1.age)
+
+
+5. What is the difference between a list and a tuple? When would you use each?
+
+Lists and tuples are both sequence data types that can store a collection of items. However, there are some key differences between them:
+
+Lists:
+- Mutable: You can modify, add, or remove elements after the list is created.
+- Syntax: Lists are defined using square brackets `[]`.
+- Performance: Lists have a slight overhead due to their dynamic nature, which can make them slower than tuples for certain operations.
+- Use Case: Use lists when you need a collection of items that may change over time, such as a list of tasks or a collection of user inputs.
+
+Example:
+```python
+my_list = [1, 2, 3]
+my_list.append(4)  # Modifies the list in place
+print(my_list)  # Output: [1, 2, 3, 4]
+```
+
+Tuples:
+- Immutable: Once a tuple is created, you cannot modify, add, or remove elements.
+- Syntax: Tuples are defined using parentheses `()`.
+- Performance: Tuples are generally faster than lists because of their immutability.
+- Use Case: Use tuples when you need a collection of items that should not change, such as coordinates, fixed data records, or as keys in a dictionary.
+
+Example:
+```python
+my_tuple = (1, 2, 3)
+new_tuple = my_tuple + (4,)  # Creates a new tuple
+print(my_tuple)  # Output: (1, 2, 3)
+print(new_tuple)  # Output: (1, 2, 3, 4)
+```
