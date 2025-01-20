@@ -83,7 +83,7 @@ print(x)  #Output: {'cherry', 'google', 'microsoft', 'banana'}
 
 
 #union = return a set containing the union of sets/Return a set that contains all items from both sets, duplicates are
-x = {"apple", "banana", "cherry"}
+x = {"apple", "banana", "cherry","apple"}
 y = {"google", "microsoft", "apple"}
 
 z = x.union(y)

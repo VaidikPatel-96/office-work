@@ -21,7 +21,7 @@ print(x)  #Output:                vadik
 
 
 #count  - returns the number of times a specified value occurs in a string
-txt = "I love apples, apple are my favorite fruit"
+txt = "I love apple, apple are my favorite fruit"
 x=txt.count("apple")
 print(x)  #Output : 2
 
