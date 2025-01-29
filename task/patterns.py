@@ -4,6 +4,12 @@ for i in range(1,6):
         print("*", end=" ")
     print()    
 
+
+for i in range(1,6):
+    for v in range(1,6):
+        print("@",end=" " )
+    print()    
+
 # output = 
 # * * * * * 
 # * * * * *
@@ -18,6 +24,11 @@ for i in range(1,r+1):
         print("*", end=" ")
     print()
 
+r=5
+for i in range(1,r+1):
+    for v in range(1,i+1):
+        print("@", end=" ")
+    print()
 # # output =
 # * 
 # * *
@@ -49,6 +60,12 @@ for i in range(1,6):
         print(j, end=" ")
     print()
 
+
+n=5
+for i in range(1,n):
+    for j in range(1,i+1):
+        print(j,end=" ")
+    print()    
 # output =
 # 1
 # 1 2
@@ -168,6 +185,7 @@ for student in students:
 
 average = sum(scores) / len(scores)
 print(f"\nThe average score is {average:.2f}")
+
 
 
 

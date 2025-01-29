@@ -1,11 +1,11 @@
 
 # #string methods
 
-# s="hello vaidik"
+#s="hello vaidik"
 
 # print(s.upper())
 # print(s.lower())
-# print(s.title())
+#print(s.title())
 # print(s.capitalize())
 # print(s.swapcase())
 # print(s.replace("hello","hi"))
@@ -291,7 +291,12 @@ def decorator(func):
 def hello():
     print("hello world")
 
+@decorator
+def hello1():
+    print("hello1")    
+
 hello()
+hello1()
 
 
 # #decorators with arguments
@@ -422,6 +427,229 @@ class Dog(Animal,Pet):
 dog=Dog("Buddy","Alice")
 print(dog.name)
 print(dog.owner)
+
+
+# #multilevel inheritance
+
+class Animal:
+    def __init__(self,name):
+        self.name=name
+
+class Mammal(Animal):
+    def has_fur(self):
+        return True
+    
+class Dog(Mammal):
+    def speak(self):
+        return "Woof!"
+    
+dog=Dog("Buddy")
+
+print(dog.name)
+print(dog.has_fur())
+print(dog.speak())
+
+
+# # method overriding
+class Parent:
+    def greet(self):
+        return "Hello from the Parent class!"
+
+class Child(Parent):
+    def greet(self):
+        return "Hello from the Child class!"
+
+# Creating instances
+parent = Parent()
+child = Child()
+
+# Method calls
+print(parent.greet())  # Output: Hello from the Parent class!
+print(child.greet())   # Output: Hello from the Child class!
+
+
+# #method overloading
+
+class Parent:
+    def greet(self, name=None):
+        if name is not None:
+            return f"Hello, {name}!"
+        return "Hello!"
+    
+# Creating instances
+parent = Parent()
+
+# Method calls
+print(parent.greet())  # Output: Hello!
+print(parent.greet("Vaidik"))  # Output: Hello, Vaidik!
+
+
+# #encapsulation
+
+class Person:
+    def __init__(self):
+        self.name = "Vaidik"
+        self.age = 20
+
+    def display(self):
+        return self.name, self.age
+    
+p1 = Person()
+print(p1.name)
+print(p1.display())
+print(p1.age)
+
+
+# #polymorphism
+
+class Dog:
+    def speak(self):
+        return "Woof!"
+    
+class Cat:
+    def speak(self):
+        return "Meow!"
+    
+def get_pet_sound(pet):
+    return pet.speak()
+
+dog = Dog()
+cat = Cat()
+
+print(get_pet_sound(dog))  # Output: Woof!
+print(get_pet_sound(cat))  # Output: Meow!
+
+
+# #abstraction
+
+from abc import ABC, abstractmethod
+
+class Animal(ABC):
+    @abstractmethod
+    def speak(self):
+        pass
+
+class Dog(Animal):
+    def speak(self):
+        return "Woof!"
+    
+class Cat(Animal):
+    def speak(self):
+        return "Meow!"
+    
+dog = Dog()
+cat = Cat()
+
+print(dog.speak())  # Output: Woof!
+print(cat.speak())  # Output: Meow!
+
+
+# #exception handling
+
+try:
+    print(x)
+except:
+    print("An exception occurred")
+
+try:
+    print(x)
+except NameError:
+    print("Variable x is not defined")
+except:
+    print("An exception occurred")
+
+try:
+    print("Hello")
+except:
+    print("Something went wrong")
+else:
+    print("Nothing went wrong")
+
+try:
+    print(x)
+except:
+    print("Something went wrong")
+finally:
+    print("The 'try except' is finished")
+
+
+# #user defined exception
+
+class MyError(Exception):
+    def __init__(self,message):
+        self.message=message
+
+num=10
+
+try:
+    if num<20:
+        raise MyError("Number is less than 20")
+except MyError as e:
+
+    print(e.message)
+
+
+# #2.) Write a Python program to check if a number is a palindrome. sort method
+
+def is_palindrome(num):
+    return num==num[::-1]
+
+print(is_palindrome(input("Enter the number: ")))
+
+
+
+
+
+## __init__ method
+
+class person:
+    def __init__ (self,name,age):
+        self.name=name
+        self.age=age
+
+person1=person("vaidik",20)
+print(person1.name)
+print(person1.age)
+
+
+## self parameter
+
+class person:
+    def __init__ (self,name,age):
+        self.name=name
+        self.age=age
+
+    def myfunc(self):
+        print("hello my name is "+self.name)
+
+person1=person("vaidik",20)
+person1.myfunc()
+
+
+## modify object properties
+
+class person:
+    def __init__ (self,name,age):
+        self.name=name
+        self.age=age
+
+    def myfunc(self):
+        print("hello my name is "+self.name)
+
+person1=person("vaidik",20)
+person1.age=21
+person1.myfunc()
+
+
+
+
+
+
+
+
+
+
+
 
 
 

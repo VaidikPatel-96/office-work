@@ -1,20 +1,20 @@
-class Animal:
-    def __init__(self,name):
-        self.name=name
 
-class Mammal(Animal):
-    def has_fur(self):
-        return True
-    
-class Pet:
-    def __init__(self,owner):
-        self.owner=owner
+# #decorators
 
-class Dog(Animal,Pet):
-    def __init__(self,name,owner):
-        Animal.__init__(self,name)
-        Pet.__init__(self,owner)
+def decorator(func):
+    def wrapper():
+        print("before function")
+        func()
+        print("after function")
+    return wrapper
 
-dog=Dog("Buddy","Alice")
-print(dog.name)
-print(dog.owner)
+@decorator
+def hello():
+    print("hello world")
+
+@decorator
+def hello1():
+    print("hello1")    
+
+hello()
+hello1()
